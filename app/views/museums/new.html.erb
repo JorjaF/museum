@@ -1,0 +1,8 @@
+<form action="/museums" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Enter a new museum:</p>
+  name <input type='text' name='museum[name]'/><br/>
+  number_of_galleries <input type='text' name='museum[number_of_galleries]'/><br/>
+  open_to_public? <input type='text' name='museum[open_to_public]'/><br/>
+  <input type='submit'/>
+</form>
