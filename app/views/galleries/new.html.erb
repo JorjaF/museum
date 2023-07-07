@@ -1,0 +1,9 @@
+<form action="/galleries" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Enter a new gallery:</p>
+  name <input type='text' name='gallery[name]'/><br/>
+  item_name <input type='text' name='gallery[item_name]'/><br/>
+  year <input type='text' name='gallery[year]'/><br/>
+  on_loan <input type='text' name='gallery[on_loan]'/><br/>
+  <input type='submit'/>
+</form>

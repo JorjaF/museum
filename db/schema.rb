@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_06_230126) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_07_221118) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "galleries", force: :cascade do |t|
+    t.string "name"
+    t.integer "museum_id"
+    t.string "item_name"
+    t.integer "year"
+    t.boolean "on_loan"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["museum_id"], name: "index_galleries_on_museum_id"
+  end
 
   create_table "museums", force: :cascade do |t|
     t.string "name"
