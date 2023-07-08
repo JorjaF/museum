@@ -9,9 +9,11 @@ Rails.application.routes.draw do
   get "/museums/new", to: "museums#new"
   post "/museums", to: "museums#create"
   get "/museum/:id", to: "museums#show"
+  get "/museum/:id/galleries", to: "museums#show_galleries"
 
   get "/galleries/new", to: "galleries#new"
   get "/galleries", to: "galleries#index"
   post "/galleries", to: "galleries#create"
   get "/gallery/:id", to: "galleries#show"
+
 end
