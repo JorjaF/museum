@@ -20,5 +20,10 @@ class MuseumsController < ApplicationController
     @museum = Museum.find(params[:id])
   end
 
+  def show_galleries
+    @museum = Museum.find(params[:id])
+    @galleries = @museum.galleries
+  end
+
 
 end

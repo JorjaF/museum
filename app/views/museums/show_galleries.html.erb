@@ -1,0 +1,15 @@
+<h1>Galleries for <%= @museum.name %></h1>
+
+<% @galleries.each do |gallery| %>
+  <h3><a href="/galleries/<%= gallery.id %>"><%= gallery.name %></a></h3>
+  <p><%= gallery.museum_id %></p>
+  <p><%= gallery.item_name %></p>
+  <p><%= gallery.year %></p>
+  <p><%= gallery.on_loan %></p>
+  <a href="/galleries/<%= gallery.id  %>/edit">Edit</a>
+  <form action="/galleries/<%= gallery.id %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+  </form>
+<% end %>
