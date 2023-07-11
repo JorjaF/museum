@@ -1,6 +1,7 @@
 class MuseumsController < ApplicationController
   def index
     @museums = Museum.all
+    @museums = @museums.order(:created_at => :desc)
   end
 
   def new
@@ -14,6 +15,7 @@ class MuseumsController < ApplicationController
     })
 
     museum.save
+    redirect_to "/museums"
   end
 
   def show
