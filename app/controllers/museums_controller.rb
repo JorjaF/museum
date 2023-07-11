@@ -1,6 +1,7 @@
 class MuseumsController < ApplicationController
   def index
     @museums = Museum.all
+    @museums = @museums.order(:created_at => :desc)
   end
 
   def new
@@ -14,6 +15,7 @@ class MuseumsController < ApplicationController
     })
 
     museum.save
+    redirect_to "/museums"
   end
 
   def show
@@ -25,5 +27,14 @@ class MuseumsController < ApplicationController
     @galleries = @museum.galleries
   end
 
+#   As a visitor
+# When I visit the parent index,
+# I see that records are ordered by most recently created first
+# And next to each of the records I see when it was created
 
-end
+  def most_recently_created
+    @museums = Museum.all
+    @museums = @museums.order(:created_at => :desc)
+  end
+
+  end

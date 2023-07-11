@@ -15,11 +15,8 @@ class GalleriesController < ApplicationController
       year: params[:gallery][:year].to_i,
       on_loan: !!params[:gallery][:on_loan],
       })
+      gallery.save
 
-    if gallery.save
-      format.html { redirect_to(galleries_page_path(gallery), :notice => 'Gallery was successfully created.') }
-    else
-      format.html { render :action => "new" }
-    end
+      redirect_to "/galleries"
   end
 end
