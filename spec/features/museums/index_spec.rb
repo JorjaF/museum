@@ -31,4 +31,5 @@ RSpec.describe "Museums Index Page", type: :feature do
 
   it "can see all museums open to public" do
     museum_1 = Museum.create!(name: "Museum of Modern Art", number_of_galleries: 10, open_to_public: true
+    
 end
