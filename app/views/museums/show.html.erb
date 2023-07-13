@@ -8,5 +8,7 @@
 
 <a href="/museums/<%= @museum.id %>/edit">Edit</a>
 
+<%= link_to "Gallery View","/museum/#{@museum.id}/galleries" %>
+
 <h3>Galleries in database total:</h3>
 <%= @museum.galleries.count %>

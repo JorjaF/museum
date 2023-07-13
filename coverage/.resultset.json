@@ -231,6 +231,57 @@
           null
         ]
       },
+      "/Users/jorjafleming/2mod/projects/museum/spec/features/museums/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/jorjafleming/2mod/projects/museum/spec/features/museums/show_spec.rb": {
         "lines": [
           1,
@@ -267,6 +318,13 @@
           null
         ]
       },
+      "/Users/jorjafleming/2mod/projects/museum/app/models/gallery.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/jorjafleming/2mod/projects/museum/app/controllers/museums_controller.rb": {
         "lines": [
           1,
@@ -290,12 +348,12 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           1,
@@ -311,15 +369,8 @@
           1,
           null
         ]
-      },
-      "/Users/jorjafleming/2mod/projects/museum/app/models/gallery.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1689206660
+    "timestamp": 1689278167
   }
 }
