@@ -2,8 +2,11 @@
 
 <h1><%= @museum.name %></h1>
 
-<p><%= @museum.number_of_galleries %></p>
+<p><b>Number of Galleries:</b> <%= @museum.number_of_galleries %></p>
 
-<p><%= @museum.open_to_public %></p>
+<p><b>Open to the public?:</b> <%= @museum.open_to_public %></p>
 
 <a href="/museums/<%= @museum.id %>/edit">Edit</a>
+
+<h3>Galleries in database total:</h3>
+<%= @museum.galleries.count %>

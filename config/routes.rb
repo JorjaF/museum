@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post "/museums", to: "museums#create"
   get "/museum/:id", to: "museums#show"
   get "/museum/:id/galleries", to: "museums#show_galleries"
+  get "/museums/most_recently_created", to: "museums#most_recently_created"
+  
 
   get "/galleries/new", to: "galleries#new"
   get "/galleries", to: "galleries#index"
